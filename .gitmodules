@@ -1,0 +1,3 @@
+[submodule "WWPPC-site-common"]
+	path = WWPPC-site-common
+	url = https://github.com/WWPPC/WWPPC-site-common.git
