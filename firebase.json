@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "math-wwppc",
     "public": "dist",
     "ignore": [
       "firebase.json",
