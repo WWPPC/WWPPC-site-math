@@ -26,5 +26,8 @@ export default defineConfig({
     },
     build: {
         target: 'es2021'
+    },
+    server: {
+        port: 5174
     }
 })
