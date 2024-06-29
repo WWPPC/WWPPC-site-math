@@ -10,6 +10,7 @@ import { useServerConnection, getAccountOpMessage } from '#/scripts/ServerConnec
 import { useAccountManager, validateCredentials } from '#/scripts/AccountManager';
 import { useConnectionEnforcer } from '#/scripts/ConnectionEnforcer';
 import recaptcha from '#/scripts/recaptcha';
+import { isDev } from '#/index';
 
 const router = useRouter();
 const route = useRoute();
@@ -46,23 +47,6 @@ const attemptLogin = async () => {
     if (res == 0) router.push({ path: (typeof route.query.redirect == 'string' ? route.query.redirect : (route.query.redirect ?? [])[0]) ?? '/home', query: { clearQuery: 1 } });
     else modal.showModal({ title: 'Could not log in:', content: getAccountOpMessage(res), color: '#F0C' });
 };
-const toSignUp = () => {
-    if (usernameInput.value.trim() == '' || passwordInput.value == '') return;
-    if (!validateCredentials(usernameInput.value, passwordInput.value)) {
-        modal.showModal({ title: 'Invalid username or password', content: 'Username must be less than or equal to 16 characters and contain only lowercase alphanumeric (a-z, 0-9) and "-" and "_" characters.', color: '#F0C' });
-        return;
-    }
-    modal.showModal({ title: 'Whoopsies!', content: 'It looks like this hasn\'t been implemented yet. No worries, we\'ll just redirect you to our main site!'}).result.then(() => {
-        window.location.replace('https://wwppc.tech/login');
-    });
-    // redirect to wwppc.tech login page with specific query
-};
-const toRecovery = async () => {
-    // redirect to wwppc.tech recovery page with specific query
-    modal.showModal({ title: 'Whoopsies!', content: 'It looks like this hasn\'t been implemented yet. No worries, we\'ll just redirect you to our main site!'}).result.then(() => {
-        window.location.replace('https://wwppc.tech/login');
-    });
-};
 </script>
 
 <script lang="ts">
@@ -86,9 +70,11 @@ const toRecovery = async () => {
                                     <InputTextBox v-model="passwordInput" placeholder="Password" type="password" style="margin-bottom: 8px;" width="208px" title="Password" maxlength="1024" autocomplete="current-password" required></InputTextBox>
                                     <span>
                                         <InputButton text="Log In" type="submit" @click="attemptLogin" width="100px" title="Log in" glitchOnMount :disabled=showLoginWait></InputButton>
-                                        <InputButton text="Sign Up" type="submit" @click="toSignUp" width="100px" title="Continue to create a new account" glitchOnMount :disabled=showLoginWait></InputButton>
+                                        <a :href="isDev ? 'http://localhost:5173/login' : 'https://wwppc.tech/login'">
+                                            <InputButton text="Sign Up" type="submit" width="100px" title="Continue to create a new account" glitchOnMount :disabled=showLoginWait></InputButton>
+                                        </a>
                                     </span>
-                                    <span class="loginForgotPassword" @click="toRecovery">Forgot password?</span>
+                                    <a :href="isDev ? 'http://localhost:5173/login' : 'https://wwppc.tech/login'" class="loginForgotPassword">Forgot password?</a>
                                 </form>
                             </div>
                         </div>
