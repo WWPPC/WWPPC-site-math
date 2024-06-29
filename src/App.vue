@@ -2,6 +2,8 @@
 import { FullscreenModal, globalModal } from '#/modal';
 import NotFound from '#/common/NotFound.vue';
 import PageHome from '@/pages/PageHome.vue';
+import PageInformatics from './pages/PageInformatics.vue';
+import PageUserView from '@/pages/PageUserView.vue';
 import PageLogin from '@/pages/PageLogin.vue';
 import { useConnectionEnforcer } from '#/scripts/ConnectionEnforcer';
 import { ref, watch } from 'vue';
@@ -36,6 +38,8 @@ watch(() => route.params, () => {
 <template name="app">
     <NotFound></NotFound>
     <PageHome></PageHome>
+    <PageInformatics></PageInformatics>
+    <PageUserView></PageUserView>
     <PageLogin></PageLogin>
     <FullscreenModal ref="modalComponent"></FullscreenModal>
 </template>

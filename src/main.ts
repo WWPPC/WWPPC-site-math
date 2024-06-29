@@ -1,4 +1,4 @@
-import { setTheme } from '#/index';
+import { isDev, setTheme } from '#/index';
 
 import '#/assets/common.css';
 import '#/assets/fonts.css';
@@ -31,16 +31,16 @@ const router = createRouter({
             }]
         },
         {
-            path: '/:page(contest)',
-            components: { App },
-            children: [{
-                path: ':panel',
-                components: { App }
-            }]
-        },
-        {
             path: '/:page(user)/@:userView',
             components: { App }
+        },
+        // spaghetti-er
+        {
+            path: '/account/:catchAll*',
+            redirect(to) {
+                window.location.replace(isDev ? 'http://localhost:5173' + to.fullPath : 'https://wwppc.tech' + to.fullPath);
+                return { path: '/home' };
+            },
         },
         // spaghetti
         {

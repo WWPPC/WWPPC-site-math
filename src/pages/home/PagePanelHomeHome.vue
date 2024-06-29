@@ -18,20 +18,18 @@ import ContactFooter from '#/common/ContactFooter.vue';
                         <div class="homeVertical">
                             <div style="flex-grow: 1;">
                                 <GlitchText text="WWPMI" font-size="var(--font-subtitle)" color="#0CF" glow shadow :steps=3 :delay=10 random></GlitchText>
-                                <GlitchText text="06/27/2024" font-size="var(--font-subsubtitle)" color="#F0C" glow random flashing :delay=10 start-glitched></GlitchText>
+                                <GlitchText text="07/27/2024" font-size="var(--font-subsubtitle)" color="#F0C" glow random flashing :delay=10 start-glitched></GlitchText>
                                 <LineDivider color="#AAA"></LineDivider>
                                 <p>
-                                    WWPMI
+                                    WWPMI is an online math and informatics tournament for high school students.
                                 </p>
                             </div>
                             <div style="display: flex; flex-direction: column;">
-                                <GlowText text="" font-size="var(--font-28)" color="lime" glow flashing></GlowText>
-                                <GlitchText text="Coming soon!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
+                                <GlitchText text="Registrations open!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
                                 <div class="centered" style="margin-top: 0.5em;">
                                     <AnimateInContainer type="fade" :delay=400>
-                                        <RouterLink to="" no-deco>
-                                            <!-- /informatics -->
-                                            <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
+                                        <RouterLink to="/informatics" no-deco>
+                                            <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF"></InputLinkButton>
                                         </RouterLink>
                                     </AnimateInContainer>
                                 </div>
@@ -49,7 +47,7 @@ import ContactFooter from '#/common/ContactFooter.vue';
                                 <GlitchText text="??/??/????" font-size="var(--font-subsubtitle)" color="#F0C" glow :steps=1 :delay=Infinity start-glitched></GlitchText>
                                 <LineDivider color="#AAA"></LineDivider>
                                 <p>
-                                    WWPMT
+                                    WWPMT will be revealed soon ;)
                                 </p>
                             </div>
                             <div style="display: flex; flex-direction: column;">
@@ -92,18 +90,23 @@ import ContactFooter from '#/common/ContactFooter.vue';
                         <img src="/icon2.png">
                     </div>
                     <p style="text-wrap: balanced;">
-                        about math stuff
+                        WWPPC Math is a subsection of WWPPC that focuses on math based contests instead of programming.
+                    </p>
+                    <p style="text-wrap: balanced; color: #0CF;">
+                        WWPPC is a 501c3 nonprofit organization.
                     </p>
                 </DoubleCutCornerContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
                     <p style="text-wrap: balanced;">
-                        link back to wwppc here
+                        Check out our main site for <span style="color: #0CF;">competitive programming</span> and <span style="color: #0CF;">hackathons</span>!
                     </p>
-                    <p style="text-wrap: balanced; color: #0CF;">
-                        WWPPC is a 501c3 nonprofit organization.
-                    </p>
+                    <div style="text-align: center">
+                        <a href="https://wwppc.tech" target="_blank" class="centered" style="text-decoration: none;">
+                            <InputIconButton text="WWPPC Site" img="/icon2-small.png" color="#0CF" font-size="var(--font-28)" no-mask></InputIconButton>
+                        </a>
+                    </div>
                 </DoubleCutCornerContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen style="grid-row: span 2;">
@@ -111,6 +114,14 @@ import ContactFooter from '#/common/ContactFooter.vue';
                     <p style="text-wrap: balance; font-size: var(--font-20);">
                         <span style="color: #0CF;">WWPPC</span>:
                         West Windsor-Plainsboro Programming Contests
+                    </p>
+                    <p style="text-wrap: balance; font-size: var(--font-20);">
+                        <span style="color: #0CF;">WWPMI</span>:
+                        West Windsor-Plainsboro Math & Informatics
+                    </p>
+                    <p style="text-wrap: balance; font-size: var(--font-20);">
+                        <span style="color: #0CF;">WWPMT</span>:
+                        West Windsor-Plainsboro Math Tournament
                     </p>
                     <LineDivider></LineDivider>
                     <p style="text-wrap: balance; font-size: var(--font-16);">
@@ -120,15 +131,13 @@ import ContactFooter from '#/common/ContactFooter.vue';
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
-                    <div style="text-align: center;">
-                        <a href="https://discord.wwppc.tech" target="_blank" class="centered" style="text-decoration: none;">
-                            <InputIconButton text="Join us on Discord!" img="/img/discord-logo.svg" color="#0CF" font-size="var(--font-medium)" img-hover-color="#5865F2"></InputIconButton>
-                        </a>
-                        <div style="height: 0.5em;"></div>
-                        <a href="https://github.com/WWPPC" target="_blank" class="centered" style="text-decoration: none;">
-                            <InputIconButton text="GitHub" img="/img/github-logo.svg" color="#0CF" font-size="var(--font-medium)" img-hover-color="#F05032"></InputIconButton>
-                        </a>
-                    </div>
+                    <a href="https://discord.wwppc.tech" target="_blank" class="centered" style="text-decoration: none;">
+                        <InputIconButton text="Join us on Discord!" img="/img/discord-logo.svg" color="#0CF" font-size="var(--font-medium)" img-hover-color="#5865F2"></InputIconButton>
+                    </a>
+                    <div style="height: 0.5em;"></div>
+                    <a href="https://github.com/WWPPC" target="_blank" class="centered" style="text-decoration: none;">
+                        <InputIconButton text="GitHub" img="/img/github-logo.svg" color="#0CF" font-size="var(--font-medium)" img-hover-color="#F05032"></InputIconButton>
+                    </a>
                 </DoubleCutCornerContainer>
             </AnimateInContainer>
         </div>

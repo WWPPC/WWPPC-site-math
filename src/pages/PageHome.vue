@@ -13,6 +13,7 @@ import PagePanelHomeAbout from '@/pages/home/PagePanelHomeAbout.vue';
             <PanelNavList>
                 <PanelNavButton text="Home" for="/home/home" is-default></PanelNavButton>
                 <PanelNavButton text="WWPPC Home" :for="isDev ? 'http://localhost:5173' : 'https://wwppc.tech'" link></PanelNavButton>
+                <PanelNavButton text="WWPMI" for="/informatics"></PanelNavButton>
                 <PanelNavButton text="About Us" for="/home/about"></PanelNavButton>
             </PanelNavList>
             <PanelRightList>
