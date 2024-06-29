@@ -29,7 +29,8 @@ import ContactFooter from '#/common/ContactFooter.vue';
                                 <GlitchText text="Coming soon!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
                                 <div class="centered" style="margin-top: 0.5em;">
                                     <AnimateInContainer type="fade" :delay=400>
-                                        <RouterLink to="/informatics" no-deco>
+                                        <RouterLink to="" no-deco>
+                                            <!-- /informatics -->
                                             <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
                                         </RouterLink>
                                     </AnimateInContainer>
@@ -55,7 +56,8 @@ import ContactFooter from '#/common/ContactFooter.vue';
                                 <GlitchText text="Coming soon!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
                                 <div class="centered" style="margin-top: 0.5em;">
                                     <AnimateInContainer type="fade" :delay=400>
-                                        <RouterLink to="tournament">
+                                        <RouterLink to="" no-deco>
+                                            <!-- /tournament -->
                                             <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
                                         </RouterLink>
                                     </AnimateInContainer>
