@@ -4,13 +4,14 @@ import { isMobile } from '#/scripts/userAgent';
 defineProps<{
     src: string
     url: string
+    name: string
     height: string
 }>();
 </script>
 
 <template>
     <a :href="$props.url" target="_blank" class="sponsorImgWrapper">
-        <img :src=$props.src :class="'sponsorImg ' + (isMobile ? 'noFilter' : '')" loading="lazy">
+        <img :src=$props.src :class="'sponsorImg ' + (isMobile ? 'noFilter' : '')" :alt="$props.name" loading="lazy">
     </a>
 </template>
 

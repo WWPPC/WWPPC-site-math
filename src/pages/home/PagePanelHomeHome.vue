@@ -6,9 +6,6 @@ import { InputLinkButton, InputIconButton } from '#/inputs';
 import LineDivider from '#/common/LineDivider.vue';
 import HomeSponsorLogo from '@/components/home/home/HomeSponsorLogo.vue';
 import ContactFooter from '#/common/ContactFooter.vue';
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
 </script>
 
 <template>
@@ -21,7 +18,7 @@ const router = useRouter();
                         <div class="homeVertical">
                             <div style="flex-grow: 1;">
                                 <GlitchText text="WWPMI" font-size="var(--font-subtitle)" color="#0CF" glow shadow :steps=3 :delay=10 random></GlitchText>
-                                <GlitchText text="??/??/????" font-size="var(--font-subsubtitle)" color="#F0C" glow :steps=1 :delay=Infinity start-glitched></GlitchText>
+                                <GlitchText text="06/27/2024" font-size="var(--font-subsubtitle)" color="#F0C" glow random flashing :delay=10 start-glitched></GlitchText>
                                 <LineDivider color="#AAA"></LineDivider>
                                 <p>
                                     WWPMI
@@ -32,7 +29,9 @@ const router = useRouter();
                                 <GlitchText text="Coming soon!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
                                 <div class="centered" style="margin-top: 0.5em;">
                                     <AnimateInContainer type="fade" :delay=400>
-                                        <InputLinkButton text="Contest Page" @click="router.push('/mi');" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
+                                        <RouterLink to="/informatics" no-deco>
+                                            <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
+                                        </RouterLink>
                                     </AnimateInContainer>
                                 </div>
                             </div>
@@ -46,7 +45,7 @@ const router = useRouter();
                         <div class="homeVertical">
                             <div style="flex-grow: 1;">
                                 <GlitchText text="WWPMT" font-size="var(--font-subtitle)" color="#0CF" glow shadow :steps=3 :delay=10 random></GlitchText>
-                                <GlitchText text="??/??/????" font-size="var(--font-subsubtitle)" color="#F0C" glow random :delay=Infinity start-glitched></GlitchText>
+                                <GlitchText text="??/??/????" font-size="var(--font-subsubtitle)" color="#F0C" glow :steps=1 :delay=Infinity start-glitched></GlitchText>
                                 <LineDivider color="#AAA"></LineDivider>
                                 <p>
                                     WWPMT
@@ -56,7 +55,9 @@ const router = useRouter();
                                 <GlitchText text="Coming soon!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
                                 <div class="centered" style="margin-top: 0.5em;">
                                     <AnimateInContainer type="fade" :delay=400>
-                                        <InputLinkButton text="Contest Page" @click="router.push('/mt');" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
+                                        <RouterLink to="tournament">
+                                            <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF" disabled></InputLinkButton>
+                                        </RouterLink>
                                     </AnimateInContainer>
                                 </div>
                             </div>

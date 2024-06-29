@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { isDev } from '#/index';
 import { PanelBody, PanelHeader, PanelMain, PanelNavButton, PanelNavList, PanelRightList, PanelView, PanelNavLargeLogo } from '#/panels';
-import UserDisp from '@/components/common/UserDisp.vue';
+import UserDisp from '#/common-components/UserDisp.vue';
 import PagePanelHomeHome from '@/pages/home/PagePanelHomeHome.vue';
 import PagePanelHomeAbout from '@/pages/home/PagePanelHomeAbout.vue';
 </script>
