@@ -130,7 +130,7 @@ const attemptLogin = async () => {
 }
 
 .loginForgotPassword {
-    color: lime;
+    color: #0CF;
     text-decoration: underline;
     cursor: pointer;
     margin-top: 8px;
