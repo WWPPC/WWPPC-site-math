@@ -66,7 +66,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What is the expected difficulty?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        Expect the first few problems to be equivalent to Project Euler's 0-10% difficulty, and the last few problems to be equivalent to 70-90% difficulty.
+                        Expect the first few problems to be equivalent to Project Euler's 0-10% difficulty (beginner-level coding problems), and the last few problems to be equivalent to 70-90% difficulty (challenging problems that require advanced math and a lot of coding).
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
