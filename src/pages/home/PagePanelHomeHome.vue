@@ -18,7 +18,7 @@ import ContactFooter from '#/common/ContactFooter.vue';
                         <div class="homeVertical">
                             <div style="flex-grow: 1;">
                                 <GlitchText text="WWPMI" font-size="var(--font-subtitle)" color="#0CF" glow shadow :steps=3 :delay=10 random></GlitchText>
-                                <GlitchText text="07/27/2024" font-size="var(--font-subsubtitle)" color="#F0C" glow random flashing :delay=10 start-glitched></GlitchText>
+                                <GlitchText text="08/10/2024" font-size="var(--font-subsubtitle)" color="#F0C" glow random flashing :delay=10 start-glitched></GlitchText>
                                 <LineDivider color="#AAA"></LineDivider>
                                 <p>
                                     WWPMI is an online math and informatics tournament for high school students.

@@ -26,7 +26,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen :delay=200>
                 <TitledDoubleCutCornerContainer title="WWPMI 2024" height="100%" align="center" hover-animation="lift" flipped>
                     <div class="centered">
-                        <GlitchText text="07/27/2024" font-size="var(--font-huge)" color="#F0C" glow random flashing :steps=5 start-glitched></GlitchText>
+                        <GlitchText text="08/10/2024" font-size="var(--font-huge)" color="#F0C" glow random flashing :steps=5 start-glitched></GlitchText>
                     </div>
                 </TitledDoubleCutCornerContainer>
             </AnimateInContainer>
@@ -57,7 +57,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="When is it?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        WWPMI 2024 will be on <b>Saturday, July 27</b>
+                        WWPMI 2024 will be on <b>Saturday, August 10</b>
                         <br><br>
                         <i>Contest schedule pending</i>
                     </p>
