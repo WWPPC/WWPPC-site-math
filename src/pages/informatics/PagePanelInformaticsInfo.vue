@@ -57,16 +57,62 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="When is it?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        WWPMI 2024 will be on <b>Saturday, August 10</b>
+                        WWPMI 2024 will be on <b>Saturday, August 10</b>.
                         <br><br>
-                        <i>Contest schedule pending</i>
+                        Contest schedule TBD
+                    </p>
+                </TitledCollapsible>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <TitledCollapsible title="How do I compete?" startCollapsed>
+                    <p style="font-size: var(--font-20)">
+                        You can sign up by <b>creating an account and registering <a href="/account/registrations" target="_blank">HERE</a></b>, NO prerequisites needed!
+                    </p>
+                </TitledCollapsible>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <TitledCollapsible title="Who is eligible for prizes?" startCollapsed>
+                    <p style="font-size: var(--font-20)">
+                        Currently, we can only guarantee prizes to high school students in the United States.
+                    </p>
+                </TitledCollapsible>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <TitledCollapsible title="Where will it be held?" startCollapsed>
+                    <p style="font-size: var(--font-20)">
+                        WWPMI will be held on this website!
+                        <br><br>
+                        You can register <a href="/account/registrations" target="_blank">here</a> at any time before the contest starts.
+                    </p>
+                </TitledCollapsible>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <TitledCollapsible title="What resources are allowed?" startCollapsed>
+                    <p style="font-size: var(--font-20)">
+                        You can use any resource as long as it was published before the beginning of the contest.
+                    </p>
+                </TitledCollapsible>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <TitledCollapsible title="What languages can I use?" startCollapsed>
+                    <p style="font-size: var(--font-20)">
+                        TBD
+                    </p>
+                </TitledCollapsible>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <TitledCollapsible title="How can I prepare?" startCollapsed>
+                    <p style="font-size: var(--font-20)">
+                        For those experienced in programming, helpful resources include <a href="https://projecteuler.net/" target="_blank">Project Euler</a> and <a href="https://codeforces.com" target="_blank">Codeforces</a>.
+                        <br><br>
+                        To learn C++, see <a href="https://cplusplus.com/doc/tutorial/" target="_blank">CPlusPlus.com</a>. To learn Python, a more beginner-friendly language, the <a href="https://runestone.academy/ns/books/published/thinkcspy/index.html" target="_blank">thinkcspy textbook</a> is useful.
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What is the expected difficulty?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        Expect the first few problems to be equivalent to Project Euler's 0-10% difficulty (beginner-level coding problems), and the last few problems to be equivalent to 70-90% difficulty (challenging problems that require advanced math and a lot of coding).
+                        Expect the first few problems to be roughly <a href="https://projecteuler.net/" target="_blank">Project Euler's</a> 0-10% difficulty (beginner-level coding problems), and the last few problems to be roughly 70-90% difficulty (challenging problems that require advanced math and a lot of coding).
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
