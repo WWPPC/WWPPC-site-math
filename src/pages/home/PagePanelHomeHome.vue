@@ -4,7 +4,7 @@ import { AnimateInContainer, CenteredContainer, DoubleCutCornerContainer } from 
 import { GlowText, GlitchText } from '#/text';
 import { InputLinkButton, InputIconButton } from '#/inputs';
 import LineDivider from '#/common/LineDivider.vue';
-import HomeSponsorLogo from '@/components/home/home/HomeSponsorLogo.vue';
+import HomeSponsorLogo from '#/common-components/home/home/HomeSponsorLogo.vue';
 import ContactFooter from '#/common/ContactFooter.vue';
 </script>
 
@@ -151,20 +151,20 @@ import ContactFooter from '#/common/ContactFooter.vue';
         <div class="sponsorColumns">
             <div>
                 <GlowText text="PARTNERS" font-size="var(--font-huge)" color="#0CF" shadow></GlowText>
-                <!-- <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" height="12vh"></HomeSponsorLogo> -->
+                <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" name="CPI Logo" height="12vh"></HomeSponsorLogo>
             </div>
             <div>
                 <GlowText text="GOLD" font-size="var(--font-huge)" color="#FD0" shadow></GlowText>
-                <!-- <HomeSponsorLogo src="/img/x-camp-logo.png" url="https://x-camp.academy/" height="10vh"></HomeSponsorLogo> -->
             </div>
             <div>
                 <GlowText text="SILVER" font-size="var(--font-huge)" color="#CCC" shadow></GlowText>
-                <!-- <HomeSponsorLogo src="/img/icode-logo.png" url="https://icodeschool.com/" height="10vh"></HomeSponsorLogo> -->
+                <HomeSponsorLogo src="/img/jane-street-logo.png" url="https://www.janestreet.com/" name="Jane Street Logo" height="10vh"></HomeSponsorLogo>
             </div>
         </div>
         <LineDivider color="#AAA"></LineDivider>
         <div class="sponsors">
-            <!-- <HomeSponsorLogo src="/img/axure-logo.svg" url="https://axure.com/" height="6vh"></HomeSponsorLogo> -->
+            <HomeSponsorLogo src="/img/recursive-dragon-logo.png" url="https://recursivedragon.com/" name="Recursive Dragon Logo" height="10vh"></HomeSponsorLogo>
+            <HomeSponsorLogo src="/img/1password-logo.svg" url="https://1password.com/" name="1Password Logo" height="7vh"></HomeSponsorLogo>
         </div>
         <div style="flex-grow: 1;"></div>
         <ContactFooter></ContactFooter>
