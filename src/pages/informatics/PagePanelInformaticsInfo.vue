@@ -13,7 +13,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen :delay=100 style="grid-row: span 2;">
                 <TitledDoubleCutCornerContainer title="General Information" height="100%" align="center" hover-animation="lift">
                     <p>
-                        The WWP Math & Informatics contest (WWPMI) is a combined math and programming contest like Project Euler for high school students in which teams of up to 4 compete to solve 12 problems in 3 hours.
+                        The WWP Math & Informatics contest (WWPMI) is a combined math and programming contest for high school students in which teams of up to 4 compete to solve 12 problems in 3 hours.
                     </p>
                     <p>
                         The contest will be held online, on this website.
@@ -89,14 +89,14 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What resources are allowed?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        You can use any resource as long as it was published before the beginning of the contest.
+                        You can use any resource that was published before the beginning of the contest.
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What languages can I use?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        TBD
+                        You may use any language or framework. Popular libraries include GMP, Numpy, and Scipy.
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
