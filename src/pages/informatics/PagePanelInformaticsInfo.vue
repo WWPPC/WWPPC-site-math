@@ -57,7 +57,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="When is it?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        WWPMI 2024 will be on <b>Saturday, August 10</b>.
+                        WWPMI 2024 will be on <b>Saturday, August 10, at 2 PM (EDT)</b>.
                         <br><br>
                         Contest schedule TBD
                     </p>
@@ -96,7 +96,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What languages can I use?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        You may use any language or framework. Popular libraries include GMP, Numpy, and Scipy.
+                        You may use any language (e.g. C++, Python, Java) or library (e.g. GMP, Numpy, and Scipy). Similar to Project Euler, subissions will be in the form of a numerical answer (computed through code on your end).
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
