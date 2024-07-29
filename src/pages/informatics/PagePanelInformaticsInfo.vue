@@ -96,7 +96,7 @@ import { GlitchText } from '#/text';
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What languages can I use?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        You may use any language (e.g. C++, Python, Java) or library (e.g. GMP, Numpy, and Scipy). Similar to Project Euler, subissions will be in the form of a numerical answer (computed through code on your end).
+                        You may use any language (e.g. C++, Python, Java) or library (e.g. GMP, Numpy, and Scipy). Similar to Project Euler, submissions will be in the form of a numerical answer (computed through code on your end).
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
