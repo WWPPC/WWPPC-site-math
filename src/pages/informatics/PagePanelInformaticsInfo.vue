@@ -49,6 +49,117 @@ import { GlitchText } from '#/text';
         <ScrollIndicator anchor="a[name=pageInformaticsScrollTo]"></ScrollIndicator>
     </div>
     <div class="fullBlock stretchBlock">
+        <a name="pageContestScrollTo3"></a>
+        <CenteredContainer>
+            <GlitchText text="Schedule" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
+        </CenteredContainer>
+        <div class="scheduleBlock">
+            <AnimateInContainer type="slideUp" show-on-screen>
+                <CutCornerContainer height="100%" flipped no-padding hover-animation="lift">
+                    <MultipaneSelectorContainer for="contestSchedule">
+                        <div class="scheduleHeader">
+                            August 10
+                        </div>
+                        <br>
+                        <MultipaneSelector for="openingCeremonies">
+                            <div class="scheduleRow">
+                                <div>2:00 - 2:30</div>
+                                <div>|</div>
+                                <div>Opening Ceremonies</div>
+                            </div>
+                            <br>
+                        </MultipaneSelector>
+                        <MultipaneSelector for="contestTime">
+                            <div class="scheduleRow">
+                                <div>2:30 - 5:30</div>
+                                <div>|</div>
+                                <div>Contest Time</div>
+                            </div>
+                            <br>
+                        </MultipaneSelector>
+                        <!-- <MultipaneSelector for="sponsors">
+                            <div class="scheduleRow">
+                                <div>6:00-7:00</div>
+                                <div>|</div>
+                                <div>Sponsor Events</div>
+                            </div>
+                        </MultipaneSelector> -->
+                        <MultipaneSelector for="closingCeremonies">
+                            <div class="scheduleRow">
+                                <div>6:15 - 6:45</div>
+                                <div>|</div>
+                                <div>Closing ceremonies</div>
+                            </div>
+                        </MultipaneSelector>
+                    </MultipaneSelectorContainer>
+                </CutCornerContainer>
+            </AnimateInContainer>
+            <AnimateInContainer type="slideUp" show-on-screen :delay=100 style="min-width: 0px; min-height: 15em;">
+                <CutCornerContainer height="100%" vertical-flipped no-padding no-scroll style="font-size: var(--font-medium);" hover-animation="lift">
+                    <MultipanePaneContainer for="contestSchedule" default="precontest">
+                        <MultipanePane for="openingCeremonies">
+                            <GlitchText text="Opening Ceremonies" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
+                            <p>
+                                Opening and closing ceremonies will be held on our Discord server!
+                            </p>
+                            <div class="centered">
+                                <a href="https://discord.wwppc.tech" target="_blank" style="text-decoration: none;">
+                                    <InputIconButton text="Join us on Discord!" img="/img/discord-logo.svg" color="#0CF" font-size="var(--font-medium)" img-hover-color="#5865F2"></InputIconButton>
+                                </a>
+                            </div>
+                            <p>
+                                We'll give more details and instructions on the contest format there.
+                            </p>
+                            <p style="font-size: var(--font-16)">
+                                <i>All times are in Eastern Standard Time (daylight savings)</i>
+                            </p>
+                        </MultipanePane>
+                        <br>
+                        <MultipanePane for="contestTime">
+                            <GlitchText text="Main Contest Time" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
+                            <p>
+                                The competition will be 3 hours long from 2:30 to 5:30. Teams of up to 4 will work together to solve roughly 12 problems. 
+                            </p>
+                            <p style="font-size: var(--font-16)">
+                                <i>All times are in Eastern Standard Time (daylight savings)</i>
+                            </p>
+                        </MultipanePane>
+                        <br>
+                        <!-- <MultipanePane for="sponsors">
+                            <GlitchText text="Sponsor Events" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
+                            <p>
+                                We will be hosting some events by our sponsors!
+                                <br><br>
+                                During this time, we will also finalize scores and determine the standings.
+                            </p>
+                            <p style="font-size: var(--font-16)">
+                                <i>All times are in Eastern Standard Time (daylight savings)</i>
+                            </p>
+                        </MultipanePane> -->
+                        <MultipanePane for="closingCeremonies">
+                            <GlitchText text="Closing Ceremonies" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
+                            <p>
+                                Opening and closing ceremonies will be held on our Discord server!
+                            </p>
+                            <div class="centered">
+                                <a href="https://discord.wwppc.tech" target="_blank" style="text-decoration: none;">
+                                    <InputIconButton text="Join us on Discord!" img="/img/discord-logo.svg" color="#0CF" font-size="var(--font-medium)" img-hover-color="#5865F2"></InputIconButton>
+                                </a>
+                            </div>
+                            <p>
+                                We will announce the winners for each division before closing off the contest.
+                            </p>
+                            <p style="font-size: var(--font-16)">
+                                <i>All times are in Eastern Standard Time (daylight savings)</i>
+                            </p>
+                        </MultipanePane>
+                    </MultipanePaneContainer>
+                </CutCornerContainer>
+            </AnimateInContainer>
+        </div>
+        <ScrollIndicator anchor="a[name=pageContestScrollTo4]"></ScrollIndicator>
+    </div>
+    <div class="fullBlock stretchBlock">
         <a name="pageInformaticsScrollTo"></a>
         <CenteredContainer>
             <GlitchText text="FAQ" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 :delay=10 on-visible></GlitchText>
@@ -180,7 +291,7 @@ import { GlitchText } from '#/text';
 }
 
 .contestWinnerTable>span:nth-child(even) {
-    color: lime;
+    color: #0CF;
     text-decoration: underline;
     cursor: pointer;
 }
