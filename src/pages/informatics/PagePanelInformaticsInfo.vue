@@ -4,6 +4,7 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
 import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, CutCornerContainer, TitledCollapsible } from '#/containers';
 import { InputLinkButton } from '#/inputs';
 import { GlitchText } from '#/text';
+import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, MultipanePane } from '#/multipane';
 </script>
 
 <template>
