@@ -119,7 +119,7 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                         <MultipanePane for="contestTime">
                             <GlitchText text="Main Contest Time" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
                             <p>
-                                The competition will be 3 hours long from 2:30 to 5:30. Teams of up to 4 will work together to solve roughly 12 problems. 
+                                The competition will be 3 hours long. Teams of up to 4 will work together to solve roughly 12 problems. 
                             </p>
                             <p style="font-size: var(--font-16)">
                                 <i>All times are in Eastern Standard Time (daylight savings)</i>
