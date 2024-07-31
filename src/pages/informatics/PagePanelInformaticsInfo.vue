@@ -91,6 +91,7 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                                 <div>|</div>
                                 <div>Closing ceremonies</div>
                             </div>
+                            <br>
                         </MultipaneSelector>
                     </MultipaneSelectorContainer>
                 </CutCornerContainer>
@@ -115,7 +116,6 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                                 <i>All times are in Eastern Standard Time (daylight savings)</i>
                             </p>
                         </MultipanePane>
-                        <br>
                         <MultipanePane for="contestTime">
                             <GlitchText text="Main Contest Time" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
                             <p>
@@ -125,7 +125,6 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                                 <i>All times are in Eastern Standard Time (daylight savings)</i>
                             </p>
                         </MultipanePane>
-                        <br>
                         <!-- <MultipanePane for="sponsors">
                             <GlitchText text="Sponsor Events" font-size="var(--font-28)" color="#0CF" on-visible></GlitchText>
                             <p>
