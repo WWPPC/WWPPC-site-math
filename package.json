@@ -14,7 +14,6 @@
     },
     "dependencies": {
         "pinia": "^2.1.7",
-        "vite-multiple-assets": "^1.2.10",
         "vue": "^3.4.15",
         "vue-router": "^4.3.0"
     },
@@ -28,8 +27,9 @@
         "@vue/tsconfig": "^0.5.1",
         "eslint": "^8.49.0",
         "eslint-plugin-vue": "^9.17.0",
-        "typescript": "~5.3.0",
+        "typescript": "^5.5.4",
         "vite": "^5.3.5",
+        "vite-multiple-assets": "^1.2.10",
         "vue-tsc": "^2.0.29"
     }
 }
