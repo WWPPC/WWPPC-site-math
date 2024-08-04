@@ -14,7 +14,7 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
             <AnimateInContainer type="slideUp" show-on-screen :delay=100 style="grid-row: span 2;">
                 <TitledDoubleCutCornerContainer title="General Information" height="100%" align="center" hover-animation="lift">
                     <p>
-                        The WWP Math & Informatics contest (WWPMI) is a combined math and programming contest for high school students in which teams of up to 4 compete to solve 12 problems in 3 hours.
+                        The WWP Math & Informatics contest (WWPMI) is a Project-Euler-style combined math and programming contest for high school students in which teams of up to 4 compete to solve 12 problems in 3 hours.
                     </p>
                     <p>
                         The contest will be held online, on this website.
@@ -207,7 +207,7 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="What languages can I use?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        You may use any language (e.g. C++, Python, Java) or library (e.g. GMP, Numpy, and Scipy). Similar to Project Euler, submissions will be in the form of a numerical answer (computed through code on your end).
+                        You may use any language, library, or framework. Similar to Project Euler, submissions will be in the form of a numerical answer computed through code on your end, and problems are designed to be computable in under a minute.
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
