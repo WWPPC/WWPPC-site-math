@@ -26,6 +26,9 @@ connectionEnforcer.connectionExcludeExact.add('/informatics/home');
 connectionEnforcer.loginExcludeExact.add('/informatics/home');
 connectionEnforcer.connectionExcludeExact.add('/informatics');
 connectionEnforcer.loginExcludeExact.add('/informatics');
+setInterval(() => {
+    console.log(contestManager.contests.WWPMI?.contest)
+}, 1000)
 </script>
 
 <template>
@@ -35,7 +38,7 @@ connectionEnforcer.loginExcludeExact.add('/informatics');
             <PanelNavList>
                 <PanelNavButton text="Home" for="/home"></PanelNavButton>
                 <PanelNavButton text="WWPMI" for="/informatics/home" is-default></PanelNavButton>
-                <div v-if="contestManager.WWPMI?.contest != null || ignoreServer" style="display: flex;">
+                <div v-if="contestManager.contests.WWPMI?.contest != null || ignoreServer" style="display: flex;">
                     <PanelNavButton text="Contest" for="/informatics/contest"></PanelNavButton>
                     <PanelNavButton text="Problems" for="/informatics/problemList"></PanelNavButton>
                     <PanelNavButton text="Leaderboard" for="/informatics/leaderboard"></PanelNavButton>
