@@ -31,6 +31,40 @@ const router = createRouter({
             }]
         },
         {
+            path: '/:page(informatics)',
+            components: { App },
+            children: [
+                {
+                    path: ':panel',
+                    components: { App }
+                },
+                {
+                    path: ':panel(problemView)/:problemId',
+                    components: { App }
+                },
+                {
+                    path: ':panel(problemView)/:problemRound(\\d+)_:problemNumber(\\d+)',
+                    components: { App }
+                },
+                {
+                    path: ':panel(archive)/:archiveContest',
+                    components: { App },
+                    children: [{
+                        path: ':archiveRound',
+                        components: { App },
+                        children: [{
+                            path: ':archiveProblem',
+                            components: { App }
+                        }]
+                    }]
+                },
+                {
+                    path: ':panel(archiveView)/:archiveContest/:archiveRound/:archiveProblem',
+                    components: { App }
+                }
+            ]
+        },
+        {
             path: '/:page(user)/@:userView',
             components: { App }
         },
