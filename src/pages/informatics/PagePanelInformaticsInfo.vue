@@ -168,9 +168,9 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
             <AnimateInContainer type="slideUp" show-on-screen>
                 <TitledCollapsible title="When is it?" startCollapsed>
                     <p style="font-size: var(--font-20)">
-                        WWPMI 2024 will be on <b>Saturday, August 10, at 2 PM (EDT)</b>.
+                        WWPMI 2024 will start on <b>Saturday, August 10, at 2:00 PM (EDT)</b>.
                         <br><br>
-                        Contest schedule TBD
+                        <i>Scroll up for contest schedule</i>
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
