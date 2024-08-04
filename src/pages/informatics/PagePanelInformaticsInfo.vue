@@ -2,7 +2,7 @@
 import ContactFooter from '#/common/ContactFooter.vue';
 import ScrollIndicator from '#/common/ScrollIndicator.vue';
 import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, CutCornerContainer, TitledCollapsible } from '#/containers';
-import { InputLinkButton } from '#/inputs';
+import { InputIconButton, InputLinkButton } from '#/inputs';
 import { GlitchText } from '#/text';
 import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, MultipanePane } from '#/multipane';
 </script>
