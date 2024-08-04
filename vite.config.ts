@@ -19,8 +19,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src/'),
-            '#': resolve(__dirname, 'WWPPC-site-common/src/'),
-            '#p': resolve(__dirname, 'WWPPC-site-common/public/')
+            '#': resolve(__dirname, 'WWPPC-site-common/src/')
         }
     },
     build: {
