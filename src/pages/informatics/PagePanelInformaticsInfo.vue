@@ -61,14 +61,12 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                         <div class="scheduleHeader">
                             August 10
                         </div>
-                        <br>
                         <MultipaneSelector for="openingCeremonies">
                             <div class="scheduleRow">
                                 <div>2:00 - 2:30</div>
                                 <div>|</div>
                                 <div>Opening Ceremonies</div>
                             </div>
-                            <br>
                         </MultipaneSelector>
                         <MultipaneSelector for="contestTime">
                             <div class="scheduleRow">
@@ -76,22 +74,13 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                                 <div>|</div>
                                 <div>Contest Time</div>
                             </div>
-                            <br>
                         </MultipaneSelector>
-                        <!-- <MultipaneSelector for="sponsors">
-                            <div class="scheduleRow">
-                                <div>6:00-7:00</div>
-                                <div>|</div>
-                                <div>Sponsor Events</div>
-                            </div>
-                        </MultipaneSelector> -->
                         <MultipaneSelector for="closingCeremonies">
                             <div class="scheduleRow">
                                 <div>6:15 - 6:45</div>
                                 <div>|</div>
                                 <div>Closing ceremonies</div>
                             </div>
-                            <br>
                         </MultipaneSelector>
                     </MultipaneSelectorContainer>
                 </CutCornerContainer>
