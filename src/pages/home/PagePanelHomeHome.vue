@@ -73,16 +73,6 @@ import ContactFooter from '#/common/ContactFooter.vue';
         <div class="centered">
             <GlitchText text="About WWPPC Math" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
         </div>
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
-        <!-- RESTRUCTURE THIS TO MAKE IT DIFFERENT -->
         <div class="homeGeneralInfoColumns" style="font-size: var(--font-medium);">
             <AnimateInContainer type="slideUp" show-on-screen style="grid-row: span 2;">
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
@@ -113,7 +103,7 @@ import ContactFooter from '#/common/ContactFooter.vue';
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
                     <p style="text-wrap: balance; font-size: var(--font-20);">
                         <span style="color: #0CF;">WWPPC</span>:
-                        West Windsor-Plainsboro Programming Contests
+                        West Windsor-Plainsboro Programming Competitions
                     </p>
                     <p style="text-wrap: balance; font-size: var(--font-20);">
                         <span style="color: #0CF;">WWPMI</span>:
