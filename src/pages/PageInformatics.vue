@@ -43,6 +43,7 @@ connectionEnforcer.loginExcludeExact.add('/informatics');
             </PanelNavList>
             <PanelRightList>
                 <UserDisp></UserDisp>
+                <ContestTimer contest="WWPMI"></ContestTimer>
             </PanelRightList>
         </PanelHeader>
         <PanelMain>
