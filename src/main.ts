@@ -1,7 +1,5 @@
 import { isDev, setTheme } from '#/index';
 
-import '#/assets/common.css';
-import '#/assets/fonts.css';
 import './assets/main.css';
 
 setTheme('#0CF', '#F0C', 'orange');
