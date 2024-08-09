@@ -4,7 +4,7 @@ import NotFound from '#/common/NotFound.vue';
 import PageHome from '@/pages/PageHome.vue';
 import PageInformatics from './pages/PageInformatics.vue';
 import PageUserView from '@/pages/PageUserView.vue';
-import PageLogin from '@/pages/PageLogin.vue';
+import PageLogin from '#/common-pages/PageLogin.vue';
 import { useConnectionEnforcer } from '#/scripts/ConnectionEnforcer';
 import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
