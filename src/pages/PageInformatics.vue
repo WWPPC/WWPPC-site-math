@@ -7,6 +7,7 @@ import PagePanelContestContest from '#/common-pages/contest/PagePanelContestCont
 import PagePanelContestProblemList from '#/common-pages/contest/PagePanelContestProblemList.vue';
 import PagePanelContestProblemView from '#/common-pages/contest/PagePanelContestProblemView.vue';
 import PagePanelContestLeaderboard from '#/common-pages/contest/PagePanelContestLeaderboard.vue';
+import ContestTimer from '#/common-components/contest/ContestTimer.vue';
 import { ref, watch } from 'vue';
 import { useConnectionEnforcer } from '#/scripts/ConnectionEnforcer';
 import { useContestManager } from '#/scripts/ContestManager';
