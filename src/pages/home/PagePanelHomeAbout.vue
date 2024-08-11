@@ -17,7 +17,13 @@ import { GlitchText } from '#/text';
             <HomeAboutCreditsCard name="Vikram Karamsetty" username="vikramk" roles="Logistics & Outreach" img="/img/vikram-karamsetty.jpeg" grade="Rising Junior (HSS)" github="VikramKaramsetty" discord="660497297074814976" bio="avid programmer (usaco silver), dedicated roboticist (First Tech Challenge #14481), track runner, problem solver, and engineer!"></HomeAboutCreditsCard>
             
             <!-- <HomeAboutCreditsCard name="asdf" username="asdf" roles="insert roles here" img="/img/asdf.jpg" grade="Rising asdf" codeforces="asdf" aops="adsf" github="asdf" discord="asdf" bio="" external></HomeAboutCreditsCard> -->
-        </div>
+        </div><br><br>
+        <h2>Problem Testers:</h2>
+        <h3>Daniel Lu</h3>
+        <h3>Maitian Sha</h3>
+        <h3>Vincent Loh</h3>
+        <h3>Thomas Liu</h3>
+        <h3>Weiming Zhou</h3>
         <ContactFooter></ContactFooter>
     </div>
 </template>
