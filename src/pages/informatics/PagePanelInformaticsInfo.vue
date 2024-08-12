@@ -34,14 +34,14 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
             <AnimateInContainer type="slideUp" show-on-screen :delay=300>
                 <CutCornerContainer height="100%" hover-animation="lift" vertical-flipped>
                     <CenteredContainer style="font-size: var(--font-20);">
-                        <GlitchText text="Registrations open!" font-size="var(--font-28)" color="#0CF" glow flashing random></GlitchText>
-                        <div class="centered" style="margin: 8px;">
+                        <GlitchText text="Contest Ended!" font-size="var(--font-28)" color="#F0C" glow random></GlitchText>
+                        <!-- <div class="centered" style="margin: 8px;">
                             <RouterLink to="/account/registrations" no-deco>
                                 <InputLinkButton text="Register" color="#0CF" font-size="var(--font-large)"></InputLinkButton>
                             </RouterLink>
-                        </div>
+                        </div> -->
                         <p style="text-align: center; font-size: var(--font-small);">
-                            <i>Contest schedule pending</i>
+                            <i>Scroll down for contest schedule</i>
                         </p>
                     </CenteredContainer>
                 </CutCornerContainer>
