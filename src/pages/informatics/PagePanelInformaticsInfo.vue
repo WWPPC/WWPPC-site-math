@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import ContactFooter from '#/common/ContactFooter.vue';
-import ScrollIndicator from '#/common/ScrollIndicator.vue';
 import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, CutCornerContainer, TitledCollapsible } from '#/containers';
 import { InputIconButton, InputLinkButton } from '#/inputs';
-import { GlitchText } from '#/text';
+import { GlowText, GlitchText } from '#/text';
 import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, MultipanePane } from '#/multipane';
+import LineDivider from '#/common/LineDivider.vue';
+import HomeSponsorLogo from '#/common-components/home/home/HomeSponsorLogo.vue';
+import ContactFooter from '#/common/ContactFooter.vue';
+import ScrollIndicator from '#/common/ScrollIndicator.vue';
 </script>
 
 <template>
@@ -50,7 +52,7 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
         <ScrollIndicator anchor="a[name=pageInformaticsScrollTo]"></ScrollIndicator>
     </div>
     <div class="fullBlock stretchBlock">
-        <a name="pageContestScrollTo3"></a>
+        <a name="pageInformaticsScrollTo"></a>
         <CenteredContainer>
             <GlitchText text="Schedule" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
         </CenteredContainer>
@@ -146,10 +148,10 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
                 </CutCornerContainer>
             </AnimateInContainer>
         </div>
-        <ScrollIndicator anchor="a[name=pageContestScrollTo4]"></ScrollIndicator>
+        <ScrollIndicator anchor="a[name=pageInformaticsScrollTo2]"></ScrollIndicator>
     </div>
     <div class="fullBlock stretchBlock">
-        <a name="pageInformaticsScrollTo"></a>
+        <a name="pageInformaticsScrollTo2"></a>
         <CenteredContainer>
             <GlitchText text="FAQ" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 :delay=10 on-visible></GlitchText>
         </CenteredContainer>
@@ -218,6 +220,33 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
             </AnimateInContainer>
         </div>
         <div class="spacer"></div>
+        <ScrollIndicator anchor="a[name=pageInformaticsScrollTo3]"></ScrollIndicator>
+    </div>
+    <div class="fullBlock stretchBlock">
+        <a name="pageInformaticsScrollTo3"></a>
+        <div class="centered">
+            <GlitchText text="Sponsors" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
+        </div>
+        <div class="sponsorColumns">
+            <div>
+                <GlowText text="PARTNERS" font-size="var(--font-huge)" color="#0CF" shadow></GlowText>
+                <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" name="CPI Logo" height="12vh"></HomeSponsorLogo>
+            </div>
+            <!-- <div>
+                <GlowText text="GOLD" font-size="var(--font-huge)" color="#FD0" shadow></GlowText>
+            </div> -->
+            <div>
+                <GlowText text="SILVER" font-size="var(--font-huge)" color="#CCC" shadow></GlowText>
+                <HomeSponsorLogo src="/img/jane-street-logo.png" url="https://www.janestreet.com/" name="Jane Street Logo" height="10vh"></HomeSponsorLogo>
+            </div>
+        </div>
+        <LineDivider color="#AAA"></LineDivider>
+        <div class="sponsors">
+                <HomeSponsorLogo src="/img/x-camp-logo.png" url="https://x-camp.academy/" name="X-Camp Logo" height="10vh"></HomeSponsorLogo>
+            <HomeSponsorLogo src="/img/recursive-dragon-logo.png" url="https://recursivedragon.com/" name="Recursive Dragon Logo" height="10vh"></HomeSponsorLogo>
+            <HomeSponsorLogo src="/img/1password-logo.svg" url="https://1password.com/" name="1Password Logo" height="7vh"></HomeSponsorLogo>
+        </div>
+        <div class="spacer"></div>
         <ContactFooter></ContactFooter>
     </div>
 </template>
@@ -228,11 +257,6 @@ import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, 
     transform: translate3D(0px, -20vh, -50px) scale(150%);
     z-index: -1;
     text-align: center;
-}
-
-.stretchBlock {
-    display: flex;
-    flex-direction: column;
 }
 
 .contestInfoBlock {
@@ -345,5 +369,30 @@ ul>li {
 
 .spacer {
     flex-grow: 1;
+}
+
+.sponsorColumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 5%;
+}
+
+.sponsorColumns>div {
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 50px;
+    padding: 0px 5%;
 }
 </style>

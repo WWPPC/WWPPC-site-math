@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import ScrollIndicator from '#/common/ScrollIndicator.vue';
 import { AnimateInContainer, CenteredContainer, DoubleCutCornerContainer } from '#/containers';
-import { GlowText, GlitchText } from '#/text';
+import { GlitchText } from '#/text';
 import { InputLinkButton, InputIconButton } from '#/inputs';
 import LineDivider from '#/common/LineDivider.vue';
-import HomeSponsorLogo from '#/common-components/home/home/HomeSponsorLogo.vue';
 import ContactFooter from '#/common/ContactFooter.vue';
+import ScrollIndicator from '#/common/ScrollIndicator.vue';
 </script>
 
 <template>
-    <div class="fullBlock homeBlock">
-        <GlitchText text="WWPPC Math" class="homeTitle" font-size="var(--font-huge-title)" color="#0CF" glow shadow :delay=10 :steps=2 random on-visible></GlitchText>
+    <div class="fullBlock stretchBlock">
+        <GlitchText text="WWPPC Math" class="homeTitle" font-size="var(--font-huge-title)" color="#0CF" glow shadow :steps=2 :delay=10 random on-visible></GlitchText>
         <div class="homeColumns">
             <AnimateInContainer type="slideUp" show-on-screen :delay=100>
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
@@ -68,7 +67,7 @@ import ContactFooter from '#/common/ContactFooter.vue';
         </div>
         <ScrollIndicator anchor="a[name=pageHomeScrollTo]"></ScrollIndicator>
     </div>
-    <div class="fullBlock homeBlock">
+    <div class="fullBlock stretchBlock">
         <a name="pageHomeScrollTo"></a>
         <div class="centered">
             <GlitchText text="About WWPPC Math" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
@@ -131,43 +130,11 @@ import ContactFooter from '#/common/ContactFooter.vue';
                 </DoubleCutCornerContainer>
             </AnimateInContainer>
         </div>
-        <ScrollIndicator anchor="a[name=pageHomeScrollTo2]"></ScrollIndicator>
-    </div>
-    <div class="fullBlock homeBlock">
-        <div class="centered">
-            <a name="pageHomeScrollTo2"></a>
-            <GlitchText text="Sponsors" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
-        </div>
-        <div class="sponsorColumns">
-            <div>
-                <GlowText text="PARTNERS" font-size="var(--font-huge)" color="#0CF" shadow></GlowText>
-                <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" name="CPI Logo" height="12vh"></HomeSponsorLogo>
-            </div>
-            <!-- <div>
-                <GlowText text="GOLD" font-size="var(--font-huge)" color="#FD0" shadow></GlowText>
-            </div> -->
-            <div>
-                <GlowText text="SILVER" font-size="var(--font-huge)" color="#CCC" shadow></GlowText>
-                <HomeSponsorLogo src="/img/jane-street-logo.png" url="https://www.janestreet.com/" name="Jane Street Logo" height="10vh"></HomeSponsorLogo>
-            </div>
-        </div>
-        <LineDivider color="#AAA"></LineDivider>
-        <div class="sponsors">
-                <HomeSponsorLogo src="/img/x-camp-logo.png" url="https://x-camp.academy/" name="X-Camp Logo" height="10vh"></HomeSponsorLogo>
-            <HomeSponsorLogo src="/img/recursive-dragon-logo.png" url="https://recursivedragon.com/" name="Recursive Dragon Logo" height="10vh"></HomeSponsorLogo>
-            <HomeSponsorLogo src="/img/1password-logo.svg" url="https://1password.com/" name="1Password Logo" height="7vh"></HomeSponsorLogo>
-        </div>
-        <div style="flex-grow: 1;"></div>
         <ContactFooter></ContactFooter>
     </div>
 </template>
 
 <style scoped>
-.homeBlock {
-    display: flex;
-    flex-direction: column;
-}
-
 .homeTitle {
     transform-origin: top;
     transform: translate3D(0px, -20vh, -50px) scale(150%);
@@ -208,30 +175,5 @@ p {
     justify-items: stretch;
     row-gap: 24px;
     column-gap: 24px;
-}
-
-.sponsorColumns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0px 5%;
-}
-
-.sponsorColumns>div {
-    width: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sponsors {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 25px;
-    column-gap: 50px;
-    padding: 0px 5%;
 }
 </style>
