@@ -76,7 +76,7 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
             <AnimateInContainer type="slideUp" show-on-screen style="grid-row: span 2;">
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
                     <div class="centered" style="height: 4em;">
-                        <img src="/icon2.png">
+                        <img src="/icon2-small.png">
                     </div>
                     <p style="text-wrap: balanced;">
                         WWPPC Math is a subsection of WWPPC that focuses on math based contests instead of programming.
