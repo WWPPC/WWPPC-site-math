@@ -152,6 +152,33 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
     </div>
     <div class="fullBlock stretchBlock">
         <a name="pageInformaticsScrollTo2"></a>
+        <div class="centered">
+            <GlitchText text="Sponsors" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
+        </div>
+        <div class="sponsorColumns">
+            <div>
+                <GlowText text="PARTNERS" font-size="var(--font-huge)" color="#0CF" shadow></GlowText>
+                <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" name="CPI Logo" height="12vh"></HomeSponsorLogo>
+            </div>
+            <!-- <div>
+                <GlowText text="GOLD" font-size="var(--font-huge)" color="#FD0" shadow></GlowText>
+            </div> -->
+            <div>
+                <GlowText text="SILVER" font-size="var(--font-huge)" color="#CCC" shadow></GlowText>
+                <HomeSponsorLogo src="/img/jane-street-logo.png" url="https://www.janestreet.com/" name="Jane Street Logo" height="10vh"></HomeSponsorLogo>
+            </div>
+        </div>
+        <LineDivider color="#AAA"></LineDivider>
+        <div class="sponsors">
+                <HomeSponsorLogo src="/img/x-camp-logo.png" url="https://x-camp.academy/" name="X-Camp Logo" height="10vh"></HomeSponsorLogo>
+            <HomeSponsorLogo src="/img/recursive-dragon-logo.png" url="https://recursivedragon.com/" name="Recursive Dragon Logo" height="10vh"></HomeSponsorLogo>
+            <HomeSponsorLogo src="/img/1password-logo.svg" url="https://1password.com/" name="1Password Logo" height="7vh"></HomeSponsorLogo>
+        </div>
+        <div class="spacer"></div>
+        <ScrollIndicator anchor="a[name=pageInformaticsScrollTo3]"></ScrollIndicator>
+    </div>
+    <div class="fullBlock stretchBlock">
+        <a name="pageInformaticsScrollTo3"></a>
         <CenteredContainer>
             <GlitchText text="FAQ" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 :delay=10 on-visible></GlitchText>
         </CenteredContainer>
@@ -218,33 +245,6 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
                     </p>
                 </TitledCollapsible>
             </AnimateInContainer>
-        </div>
-        <div class="spacer"></div>
-        <ScrollIndicator anchor="a[name=pageInformaticsScrollTo3]"></ScrollIndicator>
-    </div>
-    <div class="fullBlock stretchBlock">
-        <a name="pageInformaticsScrollTo3"></a>
-        <div class="centered">
-            <GlitchText text="Sponsors" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
-        </div>
-        <div class="sponsorColumns">
-            <div>
-                <GlowText text="PARTNERS" font-size="var(--font-huge)" color="#0CF" shadow></GlowText>
-                <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" name="CPI Logo" height="12vh"></HomeSponsorLogo>
-            </div>
-            <!-- <div>
-                <GlowText text="GOLD" font-size="var(--font-huge)" color="#FD0" shadow></GlowText>
-            </div> -->
-            <div>
-                <GlowText text="SILVER" font-size="var(--font-huge)" color="#CCC" shadow></GlowText>
-                <HomeSponsorLogo src="/img/jane-street-logo.png" url="https://www.janestreet.com/" name="Jane Street Logo" height="10vh"></HomeSponsorLogo>
-            </div>
-        </div>
-        <LineDivider color="#AAA"></LineDivider>
-        <div class="sponsors">
-                <HomeSponsorLogo src="/img/x-camp-logo.png" url="https://x-camp.academy/" name="X-Camp Logo" height="10vh"></HomeSponsorLogo>
-            <HomeSponsorLogo src="/img/recursive-dragon-logo.png" url="https://recursivedragon.com/" name="Recursive Dragon Logo" height="10vh"></HomeSponsorLogo>
-            <HomeSponsorLogo src="/img/1password-logo.svg" url="https://1password.com/" name="1Password Logo" height="7vh"></HomeSponsorLogo>
         </div>
         <div class="spacer"></div>
         <ContactFooter></ContactFooter>
