@@ -102,15 +102,15 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
                     <p style="text-wrap: balance; font-size: var(--font-20);">
                         <span style="color: #0CF;">WWPPC</span>:
-                        West Windsor-Plainsboro Programming Competitions
+                        West Windsor Plainsboro Programming Competitions
                     </p>
                     <p style="text-wrap: balance; font-size: var(--font-20);">
                         <span style="color: #0CF;">WWPMI</span>:
-                        West Windsor-Plainsboro Math & Informatics
+                        West Windsor Plainsboro Math & Informatics
                     </p>
                     <p style="text-wrap: balance; font-size: var(--font-20);">
                         <span style="color: #0CF;">WWPMT</span>:
-                        West Windsor-Plainsboro Math Tournament
+                        West Windsor Plainsboro Math Tournament
                     </p>
                     <LineDivider></LineDivider>
                     <p style="text-wrap: balance; font-size: var(--font-16);">
