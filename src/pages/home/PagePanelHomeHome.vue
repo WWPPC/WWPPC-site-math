@@ -10,7 +10,6 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
 <template>
     <div class="fullBlock stretchBlock">
         <GlitchText text="WWPPC Math" class="homeTitle" font-size="var(--font-huge-title)" color="#0CF" glow shadow :steps=2 :delay=10 random on-visible></GlitchText>
-        <GlitchText text="oof no april fools for you" class="homeTitle" font-size="var(--font-tiny)" color="#F0C" glow shadow :steps=2 :delay=10 random on-visible></GlitchText>
         <div class="homeColumns">
             <AnimateInContainer type="slideUp" show-on-screen :delay=100>
                 <DoubleCutCornerContainer height="100%" hover-animation="lift">
