@@ -1,12 +1,28 @@
 <script setup lang="ts">
 import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, CutCornerContainer, TitledCollapsible } from '#/containers';
-import { InputIconButton, InputLinkButton } from '#/inputs';
-import { GlowText, GlitchText } from '#/text';
+import { InputIconButton } from '#/inputs';
+import { GlitchText } from '#/text';
 import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, MultipanePane } from '#/multipane';
-import LineDivider from '#/common/LineDivider.vue';
-import HomeSponsorLogo from '#/common-components/home/home/HomeSponsorLogo.vue';
+import SponsorList from '#/common-components/home/home/SponsorList.vue';
 import ContactFooter from '#/common/ContactFooter.vue';
 import ScrollIndicator from '#/common/ScrollIndicator.vue';
+
+const sponsors = {
+    partner: [
+        { name: "CPI Logo", src: "/img/cpi-logo.svg", url: "https://joincpi.org/", height: "12vh" }
+    ],
+    gold: [],
+    silver: [
+        { name: "Jane Street Logo", src: "/img/jane-street-logo.png", url: "https://janestreet.com/", height: "10vh" }
+        
+    
+    ],
+    other: [
+        { name: "X-Camp Logo", src: "/img/x-camp-logo.png", url: "https://x-camp.academy/", height: "10vh" },
+        { name: "Recursive Dragon Logo", src: "/img/recursive-dragon-logo.png", url: "https://recursivedragon.com/", height: "10vh" },
+        { name: "1Password Logo", src: "/img/1password-logo.svg", url: "https://1password.com/", height: "7vh" },
+    ]
+};
 </script>
 
 <template>
@@ -152,30 +168,13 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
     </div>
     <div class="fullBlock stretchBlock">
         <a name="pageInformaticsScrollTo2"></a>
-        <div class="centered">
-            <GlitchText text="Sponsors" font-size="var(--font-title)" color="#0CF" glow shadow random :steps=2 on-visible></GlitchText>
-        </div>
-        <div class="sponsorColumns">
-            <div>
-                <GlowText text="PARTNERS" font-size="var(--font-huge)" color="#0CF" shadow></GlowText>
-                <HomeSponsorLogo src="/img/cpi-logo.svg" url="https://joincpi.org/" name="CPI Logo" height="12vh"></HomeSponsorLogo>
-            </div>
-            <!-- <div>
-                <GlowText text="GOLD" font-size="var(--font-huge)" color="#FD0" shadow></GlowText>
-            </div> -->
-            <div>
-                <GlowText text="SILVER" font-size="var(--font-huge)" color="#CCC" shadow></GlowText>
-                <HomeSponsorLogo src="/img/jane-street-logo.png" url="https://www.janestreet.com/" name="Jane Street Logo" height="10vh"></HomeSponsorLogo>
-            </div>
-        </div>
-        <LineDivider color="#AAA"></LineDivider>
-        <div class="sponsors">
-                <HomeSponsorLogo src="/img/x-camp-logo.png" url="https://x-camp.academy/" name="X-Camp Logo" height="10vh"></HomeSponsorLogo>
-            <HomeSponsorLogo src="/img/recursive-dragon-logo.png" url="https://recursivedragon.com/" name="Recursive Dragon Logo" height="10vh"></HomeSponsorLogo>
-            <HomeSponsorLogo src="/img/1password-logo.svg" url="https://1password.com/" name="1Password Logo" height="7vh"></HomeSponsorLogo>
-        </div>
-        <div class="spacer"></div>
-        <ScrollIndicator anchor="a[name=pageInformaticsScrollTo3]"></ScrollIndicator>
+        <SponsorList 
+            color="#0CF"
+            :partners="sponsors.partner" 
+            :gold="sponsors.gold" 
+            :silver="sponsors.silver" 
+            :otherSponsors="sponsors.other"
+        />
     </div>
     <div class="fullBlock stretchBlock">
         <a name="pageInformaticsScrollTo3"></a>
