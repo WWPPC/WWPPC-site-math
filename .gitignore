@@ -1,23 +1,12 @@
-# Vite
-*.vite
-vite.config.ts.timestamp*
+# dependencies and builds
+node_modules
+dist
+*.local
 
-# Builds and stuff
-dist/
-*.cache
+# typescript dev stuff
 *.tsbuildinfo
-
-# npm dependencies
-node_modules/
-
-# environment variables
-*.env
-*.env.production
-
-# MacOS
-# MAITIAN STOP REMOVING THIS
-.DS_Store
 
 # Editor directories and files
 .vscode/*
 .idea
+.DS_Store
