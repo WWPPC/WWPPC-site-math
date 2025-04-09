@@ -175,6 +175,8 @@ const sponsors = {
             :silver="sponsors.silver" 
             :bronze="sponsors.bronze"
         />
+        <div class="spacer"></div>
+        <ScrollIndicator anchor="a[name=pageInformaticsScrollTo3]"></ScrollIndicator>
     </div>
     <div class="fullBlock stretchBlock">
         <a name="pageInformaticsScrollTo3"></a>
