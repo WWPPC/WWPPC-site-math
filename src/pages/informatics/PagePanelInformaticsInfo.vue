@@ -3,7 +3,7 @@ import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, 
 import { InputIconButton } from '#/inputs';
 import { GlitchText } from '#/text';
 import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, MultipanePane } from '#/multipane';
-import SponsorList from '#/common-components/home/home/SponsorList.vue';
+import SponsorList from '#/common-components/SponsorList.vue';
 import ContactFooter from '#/common/ContactFooter.vue';
 import ScrollIndicator from '#/common/ScrollIndicator.vue';
 
@@ -17,10 +17,10 @@ const sponsors = {
         
     
     ],
-    other: [
+    bronze: [
         { name: "X-Camp Logo", src: "/img/x-camp-logo.png", url: "https://x-camp.academy/", height: "10vh" },
         { name: "Recursive Dragon Logo", src: "/img/recursive-dragon-logo.png", url: "https://recursivedragon.com/", height: "10vh" },
-        { name: "1Password Logo", src: "/img/1password-logo.svg", url: "https://1password.com/", height: "7vh" },
+        { name: "1Password Logo", src: "/img/1password-logo.svg", url: "https://1password.com/", height: "7vh" }
     ]
 };
 </script>
@@ -173,7 +173,7 @@ const sponsors = {
             :partners="sponsors.partner" 
             :gold="sponsors.gold" 
             :silver="sponsors.silver" 
-            :otherSponsors="sponsors.other"
+            :bronze="sponsors.bronze"
         />
     </div>
     <div class="fullBlock stretchBlock">
