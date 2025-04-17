@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, CutCornerContainer, TitledCollapsible } from '#/containers';
+import { AnimateInContainer, CenteredContainer, TitledDoubleCutCornerContainer, CutCornerContainer, TitledCollapsibleContainer } from '#/containers';
 import { InputIconButton } from '#/inputs';
 import { GlitchText } from '#/text';
 import { MultipaneSelectorContainer, MultipaneSelector, MultipanePaneContainer, MultipanePane } from '#/multipane';
@@ -185,66 +185,66 @@ const sponsors = {
         </CenteredContainer>
         <div class="faq">
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="When is it?" startCollapsed>
+                <TitledCollapsibleContainer title="When is it?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         WWPMI 2024 will start on <b>Saturday, August 10, at 2:00 PM (EDT)</b>.
                         <br><br>
                         <i>Scroll up for contest schedule</i>
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="How do I compete?" startCollapsed>
+                <TitledCollapsibleContainer title="How do I compete?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         You can sign up by <b>creating an account and registering <a href="/account/registrations" target="_blank">HERE</a></b>, NO prerequisites needed!
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="Who is eligible for prizes?" startCollapsed>
+                <TitledCollapsibleContainer title="Who is eligible for prizes?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         Currently, we can only guarantee prizes to high school students in the United States.
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="Where will it be held?" startCollapsed>
+                <TitledCollapsibleContainer title="Where will it be held?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         WWPMI will be held on this website!
                         <br><br>
                         You can register <a href="/account/registrations" target="_blank">here</a> at any time before the contest starts.
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="What resources are allowed?" startCollapsed>
+                <TitledCollapsibleContainer title="What resources are allowed?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         You can use any resource that was published before the beginning of the contest.
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="What languages can I use?" startCollapsed>
+                <TitledCollapsibleContainer title="What languages can I use?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         You may use any language, library, or framework. Similar to Project Euler, submissions will be in the form of a numerical answer computed through code on your end, and problems are designed to be computable in under a minute.
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="How can I prepare?" startCollapsed>
+                <TitledCollapsibleContainer title="How can I prepare?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         For those experienced in programming, helpful resources include <a href="https://projecteuler.net/" target="_blank">Project Euler</a> and <a href="https://codeforces.com" target="_blank">Codeforces</a>.
                         <br><br>
                         To learn C++, see <a href="https://cplusplus.com/doc/tutorial/" target="_blank">CPlusPlus.com</a>. To learn Python, a more beginner-friendly language, the <a href="https://runestone.academy/ns/books/published/thinkcspy/index.html" target="_blank">thinkcspy textbook</a> is useful.
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
             <AnimateInContainer type="slideUp" show-on-screen>
-                <TitledCollapsible title="What is the expected difficulty?" startCollapsed>
+                <TitledCollapsibleContainer title="What is the expected difficulty?" startCollapsed>
                     <p style="font-size: var(--font-20)">
                         Expect the first few problems to be roughly <a href="https://projecteuler.net/" target="_blank">Project Euler's</a> 0-10% difficulty (beginner-level coding problems), and the last few problems to be roughly 70-90% difficulty (challenging problems that require advanced math and a lot of coding).
                     </p>
-                </TitledCollapsible>
+                </TitledCollapsibleContainer>
             </AnimateInContainer>
         </div>
         <div class="spacer"></div>

@@ -27,7 +27,7 @@ import ScrollIndicator from '#/common/ScrollIndicator.vue';
                                 <GlitchText text="Registrations open!" font-size="var(--font-28)" color="#F0C" glow flashing random></GlitchText>
                                 <div class="centered" style="margin-top: 0.5em;">
                                     <AnimateInContainer type="fade" :delay=400>
-                                        <RouterLink to="/informatics" no-deco>
+                                        <RouterLink to="/contest" no-deco>
                                             <InputLinkButton text="Contest Page" font-size="var(--font-large)" color="#0CF"></InputLinkButton>
                                         </RouterLink>
                                     </AnimateInContainer>

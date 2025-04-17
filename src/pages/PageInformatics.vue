@@ -9,8 +9,8 @@ import PagePanelContestProblemView from '#/common-pages/contest/PagePanelContest
 import PagePanelContestLeaderboard from '#/common-pages/contest/PagePanelContestLeaderboard.vue';
 import ContestTimer from '#/common-components/contest/ContestTimer.vue';
 import { ref, watch } from 'vue';
-import { useConnectionEnforcer } from '#/scripts/ConnectionEnforcer';
-import { useContestManager } from '#/scripts/ContestManager';
+import { useContestManager } from '#/modules/ContestManager';
+import { useLoginEnforcer } from '#/modules/LoginEnforcer';
 
 const route = useRoute();
 const ignoreServer = ref(route.query.ignore_server !== undefined);
@@ -18,28 +18,25 @@ watch(() => route.query.ignore_server, () => {
     ignoreServer.value = route.query.ignore_server !== undefined;
 });
 
-const connectionEnforcer = useConnectionEnforcer();
+const loginEnforcer = useLoginEnforcer();
 const contestManager = useContestManager();
 
-connectionEnforcer.connectionInclude.add('/informatics');
-connectionEnforcer.loginInclude.add('/informatics');
-connectionEnforcer.connectionExcludeExact.add('/informatics/home');
-connectionEnforcer.loginExcludeExact.add('/informatics/home');
-connectionEnforcer.connectionExcludeExact.add('/informatics');
-connectionEnforcer.loginExcludeExact.add('/informatics');
+loginEnforcer.include.add('/contest');
+loginEnforcer.excludeExact.add('/contest/home');
+loginEnforcer.excludeExact.add('/contest');
 </script>
 
 <template>
-    <PanelView name="informatics" title="WWPMI">
+    <PanelView name="contest" title="WWPMI">
         <PanelHeader>
             <PanelNavLargeLogo></PanelNavLargeLogo>
             <PanelNavList>
                 <PanelNavButton text="Home" for="/home"></PanelNavButton>
-                <PanelNavButton text="WWPMI" for="/informatics/home" is-default></PanelNavButton>
+                <PanelNavButton text="WWPMI" for="/contest/home" is-default></PanelNavButton>
                 <div v-if="contestManager.contests.WWPMI != null || ignoreServer" style="display: flex;">
-                    <PanelNavButton text="Contest" for="/informatics/contest"></PanelNavButton>
-                    <PanelNavButton text="Problems" for="/informatics/problemList"></PanelNavButton>
-                    <PanelNavButton text="Leaderboard" for="/informatics/leaderboard"></PanelNavButton>
+                    <PanelNavButton text="Contest" for="/contest/contest"></PanelNavButton>
+                    <PanelNavButton text="Problems" for="/contest/problemList"></PanelNavButton>
+                    <PanelNavButton text="Leaderboard" for="/contest/leaderboard"></PanelNavButton>
                 </div>
             </PanelNavList>
             <PanelRightList>

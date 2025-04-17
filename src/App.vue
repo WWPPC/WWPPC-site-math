@@ -5,33 +5,30 @@ import PageHome from '@/pages/PageHome.vue';
 import PageInformatics from './pages/PageInformatics.vue';
 import PageUserView from '@/pages/PageUserView.vue';
 import PageLogin from '#/common-pages/PageLogin.vue';
-import { useConnectionEnforcer } from '#/scripts/ConnectionEnforcer';
 import { ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
-import recaptcha from '#/scripts/recaptcha';
+import { useLoginEnforcer } from '#/modules/LoginEnforcer';
+import { useServerState } from '#/modules/ServerState';
+import { useAccountManager } from '#/modules/AccountManager';
+import { useContestManager } from '#/modules/ContestManager';
 
 const modalComponent = ref<InstanceType<typeof FullscreenModal>>();
+
+const loginEnforcer = useLoginEnforcer();
+const serverState = useServerState();
+const accountManager = useAccountManager();
+const contestManager = useContestManager();
+loginEnforcer.init();
+serverState.init();
+accountManager.init();
+contestManager.init();
 
 const modal = globalModal();
 watch(() => modalComponent.value, () => {
     if (modalComponent.value != undefined) modal.setModal(modalComponent.value);
 });
 
-const connectionEnforcer = useConnectionEnforcer();
-connectionEnforcer.init();
-
 window.addEventListener('error', (err) => {
-    modal.showModal({ title: 'An Error Occured', content: `<span style="color: red;">${err.message}<br>${err.filename} ${err.lineno}:${err.colno}</span>`, color: '#F0C' });
-});
-
-// hide recaptcha badge here
-const route = useRoute();
-watch(() => route.params, () => {
-    if (route.params.page === 'login' || route.params.page === 'account') {
-        recaptcha.show();
-    } else {
-        recaptcha.hide();
-    }
+    modal.showModal({ title: 'An Error Occured', content: `<span style="color: red;">${err.message}<br>${err.filename} ${err.lineno}:${err.colno}</span>`, color: 'red' });
 });
 </script>
 
